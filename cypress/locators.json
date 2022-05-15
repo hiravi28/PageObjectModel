@@ -1,0 +1,24 @@
+{
+    "homePage": {
+        "custLoginBtn": ".borderM > :nth-child(1) > .btn",
+        "bankMgrLoginBtn": ".borderM > :nth-child(3)"
+    },
+
+    "addCustomerPage":{
+
+        "addCustBtn":"[ng-class='btnClass1']", 
+        "firstNameTxt": "body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > div:nth-child(1) > input",
+        "lastNameTxt": "body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > div:nth-child(2) > input",
+        "postCode":"body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > div:nth-child(3) > input",
+        "addCustSubmitBtn":"body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > button"
+    },
+
+    "openAccountPage":{
+        "openAcctButton": "body > div.ng-scope > div > div.ng-scope > div > div.center > button:nth-child(2)",
+        "customerSelect": "#userSelect",
+        "currencySelect": "#currency",
+        "processBtn": "body > div.ng-scope > div > div.ng-scope > div > div.ng-scope > div > div > form > button"
+        
+    }
+
+}

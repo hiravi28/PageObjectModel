@@ -1,0 +1,16 @@
+{
+    "slowTestThreshold": 5000,
+    "chromeWebSecurity": false,
+    "pageLoadTimeout": 12000,
+    "baseUrl": "https://www.way2automation.com/angularjs-protractor/banking/#/login",
+
+    "retries": {
+        "runMode": 0,
+        "openMode": 0
+    },
+
+    "testFiles": "**/*.spec.js",
+
+    "projectId": "36etaf"
+    
+}

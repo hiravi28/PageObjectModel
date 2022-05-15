@@ -1,0 +1,13 @@
+{
+
+
+    "firstName": "Ravindra",
+    "lastName" : "Test",
+    "postCode" : "110034",
+    "custAddAlertMsg" : "Customer added successfully with customer id",
+    "openAccountCustomerName": "Ravindra Test",
+    "currency": "Dollar",
+    "openAccountAlertMsg": "Account created successfully with account Number"
+
+
+}
