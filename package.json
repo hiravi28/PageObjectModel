@@ -5,22 +5,30 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "testcases": "npx cypress run --spec ./cypress/integration/testcases/*.js --browser chrome --headed"
-    
+    "testcases": "npx cypress run --spec ./cypress/integration/testcases/*.js --browser chrome --headed",
+    "testcases-allure": "npx cypress run --spec ./cypress/integration/testcases/*.js --browser chrome --headed --reporter mocha-allure-reporter",
+    "generate-allurereports": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "finaltest-allure": "npm run testcases-allure && npm run generate-allurereports"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "allure-commandline": "^2.17.2",
     "chai": "^4.3.6",
-    "cypress": "^9.6.0",
+    "cypress": "^9.6.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^1.6.2",
     "mocha": "^9.2.2",
+    "mocha-allure-reporter": "^1.4.0",
     "mochawesome": "^7.1.3"
   },
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^9.2.0",
-    "cypress-cucumber-preprocessor": "^4.3.1",
+    
+    "@shelex/cypress-allure-plugin": "^2.26.5",
     "mochawesome-merge": "^4.2.1",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor":{
+    "nonGlobalStepDefinitions": true
   }
 }
