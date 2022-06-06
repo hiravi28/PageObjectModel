@@ -13,6 +13,7 @@ export default class HomePageElements {
         return cy.get(or.homePage.bankMgrLoginBtn) //body > div.ng-scope > div > div.ng-scope > div > div.borderM.box.padT20 > div:nth-child(3) > button')
     }
 
+    // Test Comments
 
 }
 
